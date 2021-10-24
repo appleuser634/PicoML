@@ -10,3 +10,7 @@ def softmax(a):
 
     return y
 
+def mean_squared_error(y, t):
+    y = np.array(y)
+    t = np.array(t)
+    return 0.5 * np.sum((y-t)**2)
